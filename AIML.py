@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, roc_curve, auc, precision_recall_curve
 
-df = pd.read_csv('/Users/sreerajmuthaiya.a.l/Downloads/Poke.csv')  # Replace with the correct file path
+df = pd.read_csv('/Users/sreerajmuthaiya.a.l/Downloads/Poke.csv')
 
 df['Mega_Evolution'] = df['Name'].apply(lambda x: 'Yes' if 'Mega' in x else 'No')
 
